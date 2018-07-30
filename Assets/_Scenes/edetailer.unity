@@ -3343,6 +3343,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72937760d79b48e49802a5efa0967781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  woman: {fileID: 210136531}
+  vaginitis: {fileID: 632577627}
   Scenes:
   - {fileID: 828039983}
   - {fileID: 2065159745}

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SwipeManager : MonoBehaviour {
 
+    public GameObject woman, vaginitis;
     public List<GameObject> Scenes;
-
 
     Vector2 firstPressPos;
     Vector2 secondPressPos;
@@ -122,6 +122,8 @@ public class SwipeManager : MonoBehaviour {
                 page.SetActive(false);
 
             Scenes[1].SetActive(true);
+            woman.SetActive(true);
+            vaginitis.SetActive(true);
         }
         //Scene2
         else if (Scenes[1].activeInHierarchy)
@@ -263,6 +265,8 @@ public class SwipeManager : MonoBehaviour {
                 page.SetActive(false);
 
             Scenes[1].SetActive(true);
+            woman.SetActive(false);
+            vaginitis.SetActive(false);
         }
         //Scene4
         else if (Scenes[3].activeInHierarchy)
