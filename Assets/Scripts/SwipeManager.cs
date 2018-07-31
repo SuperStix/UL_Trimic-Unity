@@ -26,6 +26,7 @@ public class SwipeManager : MonoBehaviour {
         Swipe_v2();
 	}
 
+    //Swipe method
     void Swipe_v2()
     {
 
@@ -112,7 +113,7 @@ public class SwipeManager : MonoBehaviour {
         SceneRight();
     }
 
-    //AHA Page if swipe left
+    //Scene method if swipe left
     void SceneLeft()
     {
         //Scene1
@@ -238,8 +239,7 @@ public class SwipeManager : MonoBehaviour {
             Scenes[0].SetActive(true);
         }
     }
-
-    //AHA Pages if swipe right
+    //Scene method if swipe right
     void SceneRight()
     {
         //Scene1
