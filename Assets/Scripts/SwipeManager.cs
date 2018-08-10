@@ -16,6 +16,7 @@ public class SwipeManager : MonoBehaviour {
     //variables for Swipe
     public float minSwipeDistY = 0.5f;
     public float minSwipeDistX = -0.01f;
+    public int swipe = 200; // swipe value
     private Vector2 startPos;
 
     void Update ()
@@ -61,13 +62,11 @@ public class SwipeManager : MonoBehaviour {
                     //    {
                     //        
                     //    }
-                    //        //Jump ();
 					//
                     //    else if (swipeValue < 0)//down swipe
                     //    {
                     //        
                     //    }
-                    //        //Shrink ();
 					//
                     //}
 
@@ -79,7 +78,7 @@ public class SwipeManager : MonoBehaviour {
 
                         float swipeValue = touch.position.x - startPos.x;
 
-                        if (swipeValue > 500)//right swipe
+                        if (swipeValue > swipe)//right swipe
                         {
                             Debug.Log(swipeValue);
                             Debug.Log("Right Swipe");
@@ -87,7 +86,7 @@ public class SwipeManager : MonoBehaviour {
                         }
                             //MoveRight ();
 
-                        else if (swipeValue < -500)//left swipe
+                        else if (swipeValue < -swipe)//left swipe
                         {
                             Debug.Log(swipeValue);
                             Debug.Log("Left Swipe");
